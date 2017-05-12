@@ -793,6 +793,7 @@ void sem_destroyholder(FAR sem_t *sem)
 	}
 
 	sem->holder.htcb = NULL;
+	sem->holder.counts = 0;
 #endif
 }
 
